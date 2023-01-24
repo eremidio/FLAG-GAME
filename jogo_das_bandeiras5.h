@@ -31,6 +31,7 @@ add(link_scrolledwindow);
 link_scrolledwindow.add(link_grid);
 link_scrolledwindow.set_policy(POLICY_AUTOMATIC, POLICY_AUTOMATIC);
 link_grid.set_column_homogeneous(true);
+set_border_width(10);
 //CONFIGURANDO O RÓTULO
 link_grid.attach(linkinfo_label, 0, 0, 2, 1);
 linkinfo_label.set_line_wrap();
@@ -122,4 +123,3 @@ link_grid.attach(tocantins_frame, 0, 27, 1, 1);
 tocantins_frame.add(tocantins);
 link_grid.attach(tocantins_button, 1, 27, 1, 1);
 };
-
