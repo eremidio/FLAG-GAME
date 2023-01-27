@@ -128,7 +128,7 @@ buttonbox1.pack_start(answer_button);
 buttonbox1.pack_start(quit_button);
 reset_button.set_tooltip_text("Use este botão para selecionar a bandeira correspondente a um estado do Brasil.");
 answer_button.set_tooltip_text("Use este botão para checar se suas respostas estão corretas.");
-buttonbox1.set_layout(BUTTONBOX_EXPAND);
+buttonbox1.set_layout(BUTTONBOX_SPREAD);
 //ATIVANDO OS BOTÔES DA CAIXA DE BOTÕES
 reset_button.signal_clicked().connect(sigc::mem_fun(*this, &FlagWindow::select_option));
 answer_button.signal_clicked().connect(sigc::mem_fun(*this, &FlagWindow::send_answer));
