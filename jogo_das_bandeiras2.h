@@ -41,6 +41,7 @@ flag_frame.add(flag_scrolledwindow);
 flag_scrolledwindow.set_policy(POLICY_AUTOMATIC, POLICY_AUTOMATIC);
 //ADICIONANDO AS COMBOBOXES QUE PERMITIRÃO AO USUÁRIO SELECIONAR O ESTADO E A CAPITAL DO ESTADO
 box22.pack_start(option_frame, PACK_EXPAND_WIDGET, 5);
+option_frame.set_shadow_type(SHADOW_NONE);
 option_frame.add(option_grid);
 option_grid.set_row_homogeneous(true);
 option_grid.set_column_homogeneous(true);
